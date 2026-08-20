@@ -31,8 +31,21 @@ if __name__ == '__main__':
         is_day = 'Yes' if current_weather['is_day'] else 'No'
         weather_code = current_weather['weathercode']
         
+        # Extract latitude and longitude from the response
+        latitude = weather_data['latitude']
+        longitude = weather_data['longitude']
+        
+        # Assuming we have a function to get the country name based on coordinates
+        country_name = get_country_name(latitude, longitude)
+        
         print(f"Current temperature in {city_name}: {temperature}")
         print(f"Wind speed: {wind_speed}")
         print(f"Wind direction: {wind_direction}")
         print(f"Is day: {is_day}")
         print(f"Weather code: {weather_code}")
+        print(f"Latitude: {latitude}, Longitude: {longitude}")
+        print(f"Country: {country_name}")
+
+def get_country_name(latitude, longitude):
+    # Placeholder function to simulate getting the country name
+    return "Israel"
