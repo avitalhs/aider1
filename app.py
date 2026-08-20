@@ -12,7 +12,7 @@ def get_weather(city_name):
 
 if __name__ == '__main__':
     print("Hello Avital ..")
-    city_name = input("Enter the city name: ")
+    city_name = input("Enter the city name (Hebrew or English): ")
     weather_data = get_weather(city_name)
     
     if weather_data:
