@@ -11,6 +11,9 @@ def get_weather(city_name):
         return None
 
 if __name__ == '__main__':
+    import os
+    os.environ['PYTHONIOENCODING'] = 'utf-8'
+    
     print("Hello Avital ..")
     city_name = input("Enter the city name (Hebrew or English): ")
     weather_data = get_weather(city_name)
